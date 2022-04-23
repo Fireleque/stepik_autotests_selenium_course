@@ -34,6 +34,6 @@ try:
     alert.accept()
 
     assert "Congrats" in alert_text
+    
 finally:
-    # закрываем браузер после всех манипуляций
     browser.quit()
