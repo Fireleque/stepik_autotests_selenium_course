@@ -7,7 +7,6 @@ try:
     browser.get(link)
 
     value1 = browser.find_element_by_id("num1")
-
     value2 = browser.find_element_by_id("num2")
     result = int(value1.text) + int(value2.text)
     print("Сумма равна:", result)
@@ -21,7 +20,5 @@ try:
     button1.click()
 
 finally:
-    # ожидание чтобы визуально оценить результаты прохождения скрипта
     time.sleep(10)
-    # закрываем браузер после всех манипуляций
     browser.quit()
